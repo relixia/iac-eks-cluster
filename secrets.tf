@@ -1,6 +1,6 @@
 # secrets.tf
 data "aws_secretsmanager_secret" "nottobeused" {
-  secret_id = "nottobeused"
+  name = "nottobeused"
 }
 
 data "aws_secretsmanager_secret_version" "nottobeused_version" {
