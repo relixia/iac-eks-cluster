@@ -9,4 +9,5 @@ data "aws_secretsmanager_secret_version" "nottobeused_version" {
 
 output "studycase_secret_value" {
   value = data.aws_secretsmanager_secret_version.nottobeused_version.secret_string
+  sensitive = true
 }
